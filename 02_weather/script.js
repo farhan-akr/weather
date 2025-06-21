@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!city) return;
 
     // while making request to server it may throw error
-    // server/database is always in another continent so better to be safe
+ 
     try {
       const weatherData = await fetchWeatherData(city);
       displayWeatherData(weatherData);
